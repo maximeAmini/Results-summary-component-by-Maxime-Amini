@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results summary component | by Maxime Amini</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font -->
+    <link href="https://fonts.google.com/specimen/Hanken+Grotesk" rel="stylesheet" />
+    <!-- font awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+
+<body>
+
+    <div class="lg:h-screen lg:w-full lg:flex lg:justify-center lg:items-center font-['Hanken Grotesk']">
+
+        <div class="bg-white lg:flex rounded-2xl shadow-2xl">
+
+            <!-- Violet card -->
+            <div
+                class="w-full lg:w-60 bg-gradient-to-b from-[#6743FF] to-[#312CEA] rounded-b-3xl lg:rounded-2xl p-5 text-white text-center">
+
+                <h1 class="text-xl text-[#C3BFFF]">Your Result</h1>
+
+                <div
+                    class="mx-auto my-4 w-28 h-28 rounded-full text-center bg-gradient-to-b from-[#4628D6] flex flex-wrap items-center justify-center">
+                    <p class="w-full text-5xl mt-auto font-bold mb-1">76</p>
+                    <p class="w-full text-xs mb-auto text-[#C3BFFF]">Of 100</p>
+                </div>
+
+                <h2 class="text-xl font-bold">Great</h2>
+                <p class="text-xs mt-4 px-4 text-[#C9C8FF]">
+                    Your scored higher than 65% of the people who have taken these tests.
+                </p>
+            </div>
+
+            <!-- second card -->
+            <div class="w-full lg:w-60 bg-white p-5 rounded-2xl">
+                <h1 class="font-bold">Summary</h1>
+
+                <div class="bg-[#FFF6F5] rounded py-2 px-4 text-xs flex mt-4">
+                    <span class="text-[#D28A8B] font-bold"><i class="fa-solid fa-bolt mr-1"></i> Reaction</span>
+                    <span class="ml-auto"><span class="font-bold">80</span> / 100</span>
+                </div>
+                <div class="bg-[#FFFBF2] rounded py-2 px-4 text-xs flex mt-4">
+                    <span class="text-[#E8C35C] font-bold"><i class="fa-solid fa-brain mr-1"></i> Memory</span>
+                    <span class="ml-auto"><span class="font-bold">92</span> / 100</span>
+                </div>
+                <div class="bg-[#F2FBFA] rounded py-2 px-4 text-xs flex mt-4">
+                    <span class="text-[#48B698] font-bold"><i class="fa-solid fa-comment-dots mr-1"></i> Verbal</span>
+                    <span class="ml-auto"><span class="font-bold">31</span> / 100</span>
+                </div>
+                <div class="bg-[#F3F3FD] rounded py-2 px-4 text-xs flex mt-4">
+                    <span class="text-[#1622A1] font-bold"><i class="fa-solid fa-eye mr-1"></i> Visual</span>
+                    <span class="ml-auto"><span class="font-bold">72</span> / 100</span>
+                </div>
+                <button
+                    class="text-sm w-full mt-4 text-white p-2 mx-auto bg-gradient-to-b from-[#6743FF] to-[#312CEA] rounded-full hover:bg-gradient-to-b hover:from-[#303B59] hover:to-[#303B59] hover:transition hover:duration-200 hover:ease-in-out">
+                    Continue
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
